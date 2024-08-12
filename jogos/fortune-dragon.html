@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <title>Fortune Mouse</title>
+  </head>
+
+  <body>
+    <div id="inteligencia"></div>
+    <link rel="stylesheet" href="/libs/css/jogos.css" />
+    <div style="margin: 0 auto">
+      <img
+        src="/libs/img/app/banner-jogos/banner-dragon.png"
+        style="width: 60px"
+      />
+      <div class="ultimo_sinal">
+        <p class="indicador status" id="indicador-status"></p>
+
+        <div class="flex">
+          <div class="small-box">
+            <p>Válido até</p>
+            <h3 class="validade" id="validade"></h3>
+          </div>
+          <div class="small-box">
+            <p>Entrada Normal</p>
+            <h3 class="entrada-normal"></h3>
+          </div>
+          <div class="small-box">
+            <p>Entrada Turbo</p>
+            <h3 class="entrada-turbo"></h3>
+          </div>
+        </div>
+        <div>
+          <button
+            id="generate-opportunity"
+            class="identificar-sinal"
+            onclick="sendSignal()"
+          >
+            IDENTIFICAR ENTRADA
+          </button>
+        </div>
+      </div>
+
+      <div class="casa">
+        <iframe
+          id="my-iframe"
+          class="iframe_casa linkdragon"
+          src=""
+          height="800"
+          frameborder="0"
+          allow="clipboard-read; clipboard-write"
+        ></iframe>
+      </div>
+
+      <script>
+        const generateOpportunityButton = document.getElementById(
+          "generate-opportunity"
+        );
+        const indicadorStatus = document.getElementById("indicador-status");
+
+        generateOpportunityButton.addEventListener("click", function () {
+          sendSignal();
+        });
+
+        function sendSignal() {
+          indicadorStatus.textContent = "Aguarde 5 segundos...";
+
+          setTimeout(() => {
+            indicadorStatus.textContent = "Buscando entrada";
+            setTimeout(() => {
+              indicadorStatus.textContent = "Confirmado";
+              // Após o status ser "Confirmado", inicia o contador do botão
+              countdownTimer();
+              // Aqui você colocaria a lógica para enviar o sinal
+              // Como exemplo, vamos apenas atualizar os elementos de entrada normal e turbo
+              updateElement();
+              updateValidade();
+            }, 3000);
+          }, 2000);
+        }
+
+        function countdownTimer() {
+          generateOpportunityButton.disabled = true;
+          let countdown = 60;
+
+          const interval = setInterval(() => {
+            generateOpportunityButton.innerHTML = `AGUARDE ${countdown} SEGUNDOS`;
+            countdown--;
+
+            if (countdown < 0) {
+              clearInterval(interval);
+              generateOpportunityButton.disabled = false;
+              generateOpportunityButton.innerHTML = "IDENTIFICAR ENTRADA";
+            }
+          }, 1000);
+        }
+
+        // Função para atualizar a classe e o conteúdo do elemento
+        function updateElement() {
+          const element = document.querySelector(".entrada-normal");
+          const element2 = document.querySelector(".entrada-turbo");
+          const randomText = getRandomText();
+          const randomText2 = getRandomText();
+          element.textContent = randomText;
+          element2.textContent = randomText2;
+        }
+
+        // Função para obter um texto aleatório dentro do array
+        function getRandomText() {
+          const texts = ["5x", "6x", "7x", "8x", "9x", "10x"];
+          return texts[Math.floor(Math.random() * texts.length)];
+        }
+
+        // Função para atualizar o elemento com a hora de validade
+        function updateValidade() {
+          const tempoValidoSpan = document.getElementById("validade");
+          const dataAtual = new Date();
+
+          // Adiciona 3 minutos à hora atual
+          dataAtual.setMinutes(dataAtual.getMinutes() + 3);
+
+          // Formata a hora no formato "hora:minuto"
+          const horaFormatada = dataAtual
+            .getHours()
+            .toString()
+            .padStart(2, "0");
+          const minutoFormatado = dataAtual
+            .getMinutes()
+            .toString()
+            .padStart(2, "0");
+          const horaMinutoFormatado = horaFormatada + ":" + minutoFormatado;
+
+          // Atualiza o conteúdo do elemento <h3> com a hora de validade formatada
+          tempoValidoSpan.textContent = horaMinutoFormatado;
+        }
+      </script>
+      <style>
+        .box-resultado,
+        body {
+          margin: 0 auto;
+          color: #fff;
+        }
+
+        .percentual,
+        body {
+          text-align: center;
+          color: #fff;
+        }
+
+        body {
+          border-radius: 40px;
+          font-family: Arial, sans-serif;
+          align-items: center;
+          padding: 0 10px;
+          overflow: hidden;
+        }
+
+        .aposta h5 {
+          margin-top: 16px;
+          margin-bottom: 6px;
+          font-size: 16px;
+        }
+
+        .box-resultado {
+          width: 145px;
+          display: inline-block;
+        }
+
+        .container {
+          margin-bottom: 170px;
+        }
+
+        .analisando {
+          display: none;
+        }
+
+        .aposta {
+          align-items: center;
+          margin-bottom: 10px;
+        }
+
+        .barra-progresso {
+          flex: 1;
+          height: 20px;
+          position: relative;
+          overflow: hidden;
+          border-radius: 50px;
+          background-color: #ddd;
+        }
+
+        .barra-progresso-fill {
+          height: 100%;
+          width: 0;
+          background-color: #4caf50;
+          animation: 2s linear forwards barra-progresso-animacao;
+        }
+
+        .percentual {
+          position: absolute;
+          top: -11px;
+          left: 0;
+          width: 100%;
+          font-size: 12px;
+          color: #000;
+          line-height: 20px;
+        }
+
+        body {
+          background: #111;
+          font-family: Arial, sans-serif;
+          padding: 0px;
+        }
+
+        .flex {
+          display: flex;
+        }
+
+        .ultimo_sinal {
+          margin: 0px 0;
+          background: rgb(32, 32, 36);
+          padding: 5px;
+          border-radius: 12px;
+          text-align: center;
+          color: white;
+        }
+
+        .indicador {
+          background: rgba(0, 0, 0, 0.25);
+          padding: 5px;
+          border-radius: 6px;
+          margin: 0 auto;
+        }
+
+        .small-box {
+          background: rgba(0, 0, 0, 0.25);
+          width: 50%;
+          padding: 5px;
+        }
+
+        .small-box:nth-child(-n + 2) {
+          margin-right: 10px;
+        }
+
+        .small-box h3 {
+          font-size: 16px;
+          margin-left: 10px;
+        }
+
+        .ultimo_sinal .flex {
+          background: transparent;
+          padding: 0px;
+          margin: 5px 0;
+        }
+
+        .ultimo_sinal .flex p {
+          font-size: 10px;
+          color: #696969;
+        }
+
+        .ultimo_sinal strong {
+          font-size: 10px;
+          color: #696969;
+          font-weight: 500;
+        }
+
+        .casa {
+          margin: 0px 0;
+          background: rgb(32, 32, 36);
+          padding: 5px;
+          border-radius: 5px;
+        }
+
+        .casa iframe {
+          width: 100%;
+        }
+      </style>
+    </div>
+    <script src="/libs/js/link.js"></script>
+  </body>
+</html>

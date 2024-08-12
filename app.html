@@ -1,0 +1,4114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <title>INIFINITY HACK</title>
+    <link rel="stylesheet" href="../libs/css/asdadsaddsa.css" />
+
+    <link rel="icon" sizes="32x32" href="/libs/img/favicon.ico" />
+
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests;default-src *; 
+                  style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
+                  script-src * 'self' 'unsafe-inline' 'unsafe-eval';"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+      <div class="header">
+        <!--<div class="notificacao abre_notificacao">
+        <img src="../libs/img/app/menu/notificacao.png" alt="">
+    </div>-->
+        <img class="logo" src="../libs/img/logo.png" />
+        <img class="line" src="../libs/img/line.png" />
+        <!--<div class="hot abre_jogos">
+        <img src="../libs/img/app/fogo.svg" alt="">
+    </div>-->
+      </div>
+      <!--<div class="jogos_pagam">
+    <div class="fechar">X</div>
+    <div class="flex">
+        <div class="hot">
+            <img src="../libs/img/app/fogo.svg" alt="">
+        </div>
+        <h3>Jogos que mais pagam</h3>
+    </div>
+    <p>Relatório operacional</p>
+    
+    <h2>
+        09/02/2024    
+    </h2>
+    <div id="relatorios-container">
+        <div id="loading-gif">
+            <img src="../libs/img/carregando.gif" alt="">
+        </div>
+    </div>
+</div>
+<div class="notificacoes">
+    <div class="fechar_noti">X</div>
+    <div class="flex topo">
+        <div class="notificacao">
+            <img src="../libs/img/app/menu/notificacao.png" alt="">
+        </div>
+        <h3>Notificações</h3>
+    </div>
+    <div class="main_noticias">
+        <div id="loading-gif">
+            <img src="../libs/img/carregando.gif" alt="">
+        </div>
+    </div>
+</div>
+<script>
+
+    function carregarNotificacoes() {
+        $.ajax({
+            url: '../libs/includes/atualiza_notificacoes.php',
+            success: function(data) {
+                $('.main_noticias').html(data)
+            }
+        })
+    }
+
+    function carregarRelatorios() {
+        $.ajax({
+            url: '../libs/includes/carregar_relatorios.php',
+            success: function(data) {
+            $('#relatorios-container').html(data)
+            }
+        })
+    }
+    
+    $(document).ready(function() {
+
+        carregarNotificacoes()
+        carregarRelatorios()
+
+        setInterval(function() {
+            carregarNotificacoes()
+            carregarRelatorios()
+        }, 15000)
+
+    })
+
+</script>-->
+      <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+      <script src="../libs/js/scripts.js"></script>
+      <style>
+        .notificacoes {
+          padding: 14px;
+          box-shadow: 0px 4px 60px rgba(0, 253, 216, 0.5);
+          border-radius: 22px;
+          margin: 0 auto;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 9999;
+          display: none;
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+          background-color: rgba(0, 0, 0, 0.96);
+          color: #fff;
+          width: 85%;
+          max-width: 448px;
+        }
+
+        .notificacoes .notificacao {
+          width: 50px !important;
+          height: 50px !important;
+        }
+
+        .notificacoes .topo {
+          padding: 15px;
+        }
+
+        .sinais_pagam {
+          padding: 14px;
+          box-shadow: 0px 4px 60px rgba(0, 253, 216, 0.5);
+          border-radius: 22px;
+          margin: 0 auto;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 9999;
+          display: none;
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+          background-color: rgba(0, 0, 0, 0.96);
+          color: #fff;
+          width: 85%;
+          max-width: 448px;
+        }
+
+        .sinais_pagam .sinal {
+          width: 50px !important;
+          height: 50px !important;
+        }
+
+        .sinais_pagam .topo {
+          padding: 15px;
+        }
+
+        .fechar_noti {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          right: 19px;
+          border-radius: 26px;
+          background: #black;
+          border: 2px solid #0085ff;
+          padding: 4px;
+          color: white;
+          font-weight: bold;
+          top: 10px;
+        }
+
+        .notificacoes .topo h3 {
+          margin-left: 15px;
+          font-size: 21px;
+          margin-top: 11px;
+          margin-bottom: 0;
+        }
+
+        .noti {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #262626;
+          margin: 10px 0px;
+          padding: 0px 10px;
+        }
+
+        .noti p {
+          color: #0085ff;
+          font-weight: bold;
+          font-size: 13px;
+        }
+
+        .noti h3 {
+          font-size: 12px;
+        }
+
+        .noti .categoria {
+          border: 0.5px solid #0085ff;
+          padding: 8px 16px;
+          border-radius: 28px;
+          font-size: 10px;
+          color: #fff;
+        }
+
+        .jogos_pagam {
+          padding: 14px;
+          box-shadow: 0px 4px 60px rgba(107, 19, 202, 0.5);
+          border-radius: 22px;
+          margin: 0 auto;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 9999;
+          display: none;
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+          background-color: rgba(0, 0, 0, 0.96);
+          color: #fff;
+          padding: 20px;
+          width: 85%;
+          max-width: 448px;
+        }
+
+        .fechar,
+        .fechar_sinais {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          right: 19px;
+          border-radius: 26px;
+          background: #0085ff;
+          padding: 4px;
+          color: black;
+          font-weight: bold;
+          top: 10px;
+        }
+
+        .jogos_pagam .flex {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .jogos_pagam .hot {
+          width: 50px;
+          height: 50px;
+        }
+
+        .jogos_pagam .hot img {
+          width: 80%;
+        }
+
+        .jogos_pagam h3 {
+          font-weight: 500;
+          font-size: 22px;
+          margin-left: 18px;
+        }
+
+        .jogos_pagam p {
+          font-weight: 300;
+          margin-top: -10px;
+        }
+
+        .lista_jogos p {
+          margin-top: -10px;
+          font-weight: 500;
+          width: 100%;
+          text-align: left;
+        }
+
+        .lista_jogos {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #262626;
+          padding-bottom: 4px;
+          margin-top: 8px;
+        }
+
+        .jogos_pagam .column {
+          flex-direction: column;
+          margin-left: 8px;
+        }
+
+        .semana {
+          font-size: 8px;
+          width: 100%;
+          font-weight: 500;
+          text-align: left;
+          margin-top: 0 !important;
+        }
+
+        .sacado {
+          margin-bottom: 0;
+          font-weight: 500;
+          margin-top: -10px;
+          font-size: 13px;
+          text-align: left;
+        }
+
+        .estatisticas {
+          width: 18px;
+        }
+
+        .lista_jogos h3 {
+          font-size: 14px;
+          margin-left: 0px;
+        }
+
+        .lista_jogos .valor {
+          color: #ffb800;
+          text-transform: uppercase;
+        }
+
+        .lista_jogos .jogar {
+          background: rgba(0, 166, 142, 0.1);
+          border: 0.5px solid #0085ff;
+          border-radius: 28.5px;
+          width: 50px;
+          margin: 0;
+          height: 25px;
+        }
+      </style>
+      <style>
+        .oferta {
+          justify-content: space-evenly;
+        }
+
+        .cash {
+          width: 26px !important;
+          margin-top: -13px;
+          margin-right: 10px;
+        }
+
+        .oferta .carrinho {
+          border: 0.5px solid #0085ff;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 10.5px;
+          padding: 4px 23px;
+          color: white !important;
+        }
+
+        .oferta img {
+          width: 15px;
+        }
+
+        .alarme {
+          width: 25px !important;
+          margin-top: -16px;
+          margin-left: -12px;
+        }
+
+        .raio {
+          margin-top: -15px;
+          margin-right: 10px;
+        }
+
+        .oferta div {
+          text-align: left;
+          width: 58%;
+          min-width: 205px;
+        }
+
+        .oferta h3 {
+          margin-bottom: 0;
+          font-size: 11px;
+          margin-top: 0;
+          font-weight: 500;
+        }
+
+        .oferta p {
+          color: white !important;
+          margin-top: 0;
+          font-size: 13px;
+          font-weight: 300;
+          letter-spacing: 0.3px;
+        }
+      </style>
+      <div class="background"></div>
+      <script>
+        $(document).ready(function () {
+          $(document).on("click", ".carrega-conteudo", function (event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+
+            $(this).off("click");
+
+            // Verifica se o elemento clicado está dentro de um elemento com a classe "box-jogo jogar"
+            if (
+              $(this).closest(".box-jogo").length > 0 ||
+              $(this).closest(".lista_jogos").length > 0
+            ) {
+              // Remove a classe "carrega-conteúdo" do elemento com a classe "jogar-gamepad a"
+              var jogarGamepadLink = document.querySelector(".jogar-gamepad a");
+              if (
+                jogarGamepadLink &&
+                jogarGamepadLink.classList.contains("carrega-conteudo")
+              ) {
+                jogarGamepadLink.classList.remove("carrega-conteudo");
+              }
+
+              // Verifica se o atributo "data-url" existe antes de tentar removê-lo
+              if (
+                jogarGamepadLink &&
+                jogarGamepadLink.hasAttribute("data-url")
+              ) {
+                jogarGamepadLink.removeAttribute("data-url");
+              }
+
+              // Clica no elemento com a classe "jogar-gamepad a"
+              setTimeout(() => {
+                if (jogarGamepadLink) {
+                  jogarGamepadLink.click();
+                }
+              }, 2000);
+            }
+
+            // Obtém a URL do atributo "data-url" do link clicado
+            var url = $(this).data("url");
+            // Verifica se a URL está definida antes de executar a animação para esconder o conteúdo
+            if (url) {
+              /*if(url=='/jogos/jogos.html'){
+                          $('#conteudo').fadeOut(1500);
+                          $('#conteudo').fadeIn(1500);
+                          $('#jogos').fadeIn(1500);
+                          $('#melhores_jogos').fadeOut(1500);
+                          $('#melhores_jogos_sliderr').fadeOut(1500);
+                          $('#vip').fadeOut(1500);
+                          $('#sliderr').fadeOut(1500);
+                      }else{*/
+              // Esconde o conteúdo atual da div "conteudo" com uma animação de meio segundo (500 milissegundos)
+              $("#conteudo").fadeOut(1500, function () {
+                // Carrega o conteúdo da URL dentro da div "conteudo"
+                $("#conteudo").html(
+                  '<iframe src="' +
+                    url +
+                    '" frameborder="0" onload="resizeIframe(this)" style="height: 1060px;"></iframe>'
+                );
+
+                // Exibe novamente o conteúdo com uma animação de meio segundo (500 milissegundos)
+                $("#conteudo").fadeIn(1500);
+              });
+              //}
+            }
+          });
+        });
+      </script>
+      <style>
+        .background.active {
+          width: 100vw;
+          height: 100vh;
+          background: #000000cc;
+          position: fixed;
+          z-index: 9898;
+          top: 0;
+        }
+
+        /*.jogos_pagam.active, .notificacoes.active  {
+        display: block;
+        opacity: 1;
+    }*/
+      </style>
+      <script>
+        /*const divHot = document.querySelector('.abre_jogos');
+          const divJogosPagam = document.querySelector('.jogos_pagam');
+          const btnFechar = document.querySelector('.fechar');
+      
+          divHot.addEventListener('click', function() {
+              divJogosPagam.classList.add('active');
+              document.querySelector(".background").classList.add('active');
+          });
+      
+          btnFechar.addEventListener('click', function() {
+              divJogosPagam.classList.remove('active');
+              document.querySelector(".background").classList.remove('active');
+          });
+      
+          const abre_notificacao = document.querySelector('.abre_notificacao');
+          const divnotificacoes = document.querySelector('.notificacoes');
+          const fechar_noti = document.querySelector('.fechar_noti');
+      
+          abre_notificacao.addEventListener('click', function() {
+              divnotificacoes.classList.add('active');
+              document.querySelector(".background").classList.add('active');
+          });
+      
+          fechar_noti.addEventListener('click', function() {
+              divnotificacoes.classList.remove('active');
+              document.querySelector(".background").classList.remove('active');
+          });*/
+      </script>
+
+      <div class="conteudo" id="conteudo">
+        <div class="melhores_jogos" id="melhores_jogos">
+          <img class="foguinho" src="../libs/img/app/foguinho.png" alt="" />
+          <span class="texto"> Melhores Jogos Hoje: </span>
+          <span id="melhoresData"></span>
+        </div>
+
+        <div class="melhores_jogos_sliderr" id="melhores_jogos_sliderr">
+          <div class="melhores_jogos_slide-track">
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_dragon_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-dragon"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_tiger_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-tiger"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_ox_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor">R$ <span class="valor-ox"></span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_mouse_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-mouse"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_rabbit_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-rabbit"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/mines_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-mines"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/aviator_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-crash"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_dragon_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-dragon"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_tiger_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-tiger"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_ox_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor">R$ <span class="valor-ox"></span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_mouse_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-mouse"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_rabbit_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-rabbit"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/mines_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-mines"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/aviator_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-crash"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_dragon_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-dragon"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_tiger_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-tiger"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_ox_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor">R$ <span class="valor-ox"></span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_mouse_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-mouse"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_rabbit_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-rabbit"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/mines_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-mines"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/aviator_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-crash"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_dragon_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-dragon"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_tiger_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-tiger"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_ox_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor">R$ <span class="valor-ox"></span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_mouse_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-mouse"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/fortune_rabbit_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-rabbit"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/mines_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-mines"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="avisos_melhores_jogos">
+              <div class="melhores_jogos_box">
+                <img src="../libs/img/app/jogos/aviator_quad.png" />
+              </div>
+              <div class="melhores_jogos_small-box">
+                <div class="melhores_jogos_parte-esquerda">
+                  <img src="../libs/img/app/moeda-dollar.png" />
+                </div>
+                <div class="melhores_jogos_parte-direita">
+                  <h1>VALOR SACADO</h1>
+                  <span class="valor"
+                    >R$ <span class="valor-crash"></span
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sliderr" id="sliderr">
+          <div class="slide-track">
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="avisos_ganhos">
+              <div class="small-box">
+                <div class="parte-esquerda">
+                  <img src="../libs/img/app/pix.png" alt="" />
+                </div>
+                <div class="parte-direita">
+                  <div class="preco">
+                    <p>R$</p>
+                    <strong class="valorSpan"></strong>
+                    <p class="moeda">BRL</p>
+                  </div>
+                  <div class="mensagem">
+                    <strong class="nome_jogador nomeSpan"></strong><br />
+                    <p>
+                      acabou de
+                      <strong style="color: #9029ff">SACAR</strong> via
+                    </p>
+                    <strong class="jogo">PIX</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<h2 class="text-left">Jogos disponíveis</h2>-->
+
+        <div class="carrossel" id="jogos">
+          <!-- INÍCIO FORTUNE DRAGON -->
+          <div class="box-jogo">
+            <div class="moldura">
+              <img src="./libs/img/app/jogos/fortune_dragon.png" alt="" />
+            </div>
+            <div class="main_placar">
+              <a
+                class="jogar carrega-conteudo"
+                data-url="/jogos/fortune-dragon.html"
+                >JOGAR</a
+              >
+
+              <div class="aviso_placar">
+                <div class="flex">
+                  <div class="pulsar-geston"></div>
+                  <p>RESULTADOS</p>
+                </div>
+              </div>
+              <div class="placar-big-win">
+                <p class="valor-atual-dragon"></p>
+              </div>
+              <div class="placar-mega-win">
+                <p class="valor-atual-dragon2"></p>
+              </div>
+              <div class="placar-super-mega-win">
+                <p class="valor-atual-dragon3"></p>
+              </div>
+            </div>
+          </div>
+          <!-- FIM FORTUNE DRAGON -->
+
+          <!-- INÍCIO FORTUNE TIGER -->
+          <div class="box-jogo">
+            <div class="moldura">
+              <img src="../libs/img/app/jogos/fortune_tiger.png" alt="" />
+            </div>
+            <div class="main_placar">
+              <a
+                class="jogar carrega-conteudo"
+                data-url="/jogos/fortune-tiger.html"
+                >JOGAR</a
+              >
+
+              <div class="aviso_placar">
+                <div class="flex">
+                  <div class="pulsar-geston"></div>
+                  <p>RESULTADOS</p>
+                </div>
+              </div>
+              <div class="placar-big-win">
+                <p class="valor-atual-tiger"></p>
+              </div>
+              <div class="placar-mega-win">
+                <p class="valor-atual-tiger2"></p>
+              </div>
+              <div class="placar-super-mega-win">
+                <p class="valor-atual-tiger3"></p>
+              </div>
+            </div>
+          </div>
+          <!-- FIM FORTUNE TIGER -->
+
+          <!-- INÍCIO FORTUNE OX -->
+          <div class="box-jogo">
+            <div class="moldura">
+              <img src="../libs/img/app/jogos/fortune_ox.png" alt="" />
+            </div>
+            <div class="main_placar">
+              <a
+                class="jogar carrega-conteudo"
+                data-url="/jogos/fortune-ox.html"
+                >JOGAR</a
+              >
+
+              <div class="aviso_placar">
+                <div class="flex">
+                  <div class="pulsar-geston"></div>
+                  <p>RESULTADOS</p>
+                </div>
+              </div>
+              <div class="placar-big-win">
+                <p class="valor-atual-ox"></p>
+              </div>
+              <div class="placar-mega-win">
+                <p class="valor-atual-ox2"></p>
+              </div>
+              <div class="placar-super-mega-win">
+                <p class="valor-atual-ox3"></p>
+              </div>
+            </div>
+          </div>
+          <!-- FIM FORTUNE OX -->
+
+          <!-- INÍCIO FORTUNE MOUSE -->
+          <div class="box-jogo">
+            <div class="moldura">
+              <img src="../libs/img/app/jogos/fortune_mouse.png" alt="" />
+            </div>
+            <div class="main_placar">
+              <a
+                class="jogar carrega-conteudo"
+                data-url="/jogos/fortune-mouse.html"
+                >JOGAR</a
+              >
+
+              <div class="aviso_placar">
+                <div class="flex">
+                  <div class="pulsar-geston"></div>
+                  <p>RESULTADOS</p>
+                </div>
+              </div>
+              <div class="placar-big-win">
+                <p class="valor-atual-mouse"></p>
+              </div>
+              <div class="placar-mega-win">
+                <p class="valor-atual-mouse2"></p>
+              </div>
+              <div class="placar-super-mega-win">
+                <p class="valor-atual-mouse3"></p>
+              </div>
+            </div>
+          </div>
+          <!-- FIM FORTUNE MOUSE -->
+
+          <!-- INÍCIO FORTUNE RABBIT -->
+          <div class="box-jogo">
+            <div class="moldura">
+              <img src="../libs/img/app/jogos/fortune_rabbit.png" alt="" />
+            </div>
+            <div class="main_placar">
+              <a
+                class="jogar carrega-conteudo"
+                data-url="/jogos/fortune-rabbit.html"
+                >JOGAR</a
+              >
+
+              <div class="aviso_placar">
+                <div class="flex">
+                  <div class="pulsar-geston"></div>
+                  <p>RESULTADOS</p>
+                </div>
+              </div>
+              <div class="placar-big-win">
+                <p class="valor-atual-rabbit"></p>
+              </div>
+              <div class="placar-mega-win">
+                <p class="valor-atual-rabbit2"></p>
+              </div>
+              <div class="placar-super-mega-win">
+                <p class="valor-atual-rabbit3"></p>
+              </div>
+            </div>
+          </div>
+          <!-- FIM FORTUNE RABBIT -->
+
+          <!-- INÍCIO MINES -->
+          <div class="box-jogo">
+            <div class="moldura">
+              <img src="../libs/img/app/jogos/mines.png" alt="" />
+            </div>
+            <div class="main_placar">
+              <a class="jogar carrega-conteudo" data-url="/jogos/mines.html"
+                >JOGAR</a
+              >
+
+              <div class="aviso_placar">
+                <div class="flex">
+                  <div class="pulsar-geston"></div>
+                  <p>RESULTADOS</p>
+                </div>
+              </div>
+              <div class="placar-green">
+                <p class="valor-atual-mines"></p>
+              </div>
+              <div class="placar-red">
+                <p class="valor-atual-mines2"></p>
+              </div>
+              <div class="placar-percent">
+                <p class="valor-atual-mines3"></p>
+              </div>
+            </div>
+          </div>
+          <!-- FIM MINES -->
+
+          <!-- INÍCIO CRASH -->
+          <div class="box-jogo">
+            <div class="moldura">
+              <img src="../libs/img/app/jogos/aviator.png" alt="" />
+            </div>
+            <div class="main_placar">
+              <a class="jogar carrega-conteudo" data-url="/jogos/crash.html"
+                >JOGAR</a
+              >
+
+              <div class="aviso_placar">
+                <div class="flex">
+                  <div class="pulsar-geston"></div>
+                  <p>RESULTADOS</p>
+                </div>
+              </div>
+              <div class="placar-green">
+                <p class="valor-atual-crash"></p>
+              </div>
+              <div class="placar-red">
+                <p class="valor-atual-crash2"></p>
+              </div>
+              <div class="placar-percent">
+                <p class="valor-atual-crash3"></p>
+              </div>
+            </div>
+          </div>
+          <!-- FIM CRASH -->
+        </div>
+
+        <div class="modal_checkout" style="display: none"></div>
+        <script>
+          bloqueado = document.querySelectorAll(".bloqueado");
+
+          for (let i = 0; i < bloqueado.length; i++) {
+            bloqueado[i].addEventListener("click", function () {
+              document.querySelector(
+                ".modal_checkout"
+              ).innerHTML = `<button class="fechar_modal" style="display:block">X</button><iframe id="my-iframe" style="padding:0px;" class="iframe_casa" src="${bloqueado[i].attributes["data-url"].value}" height="550" frameborder="0"></iframe>`;
+
+              modal_checkout = document.querySelector(".modal_checkout");
+              modal_checkout.style.display = "block";
+
+              document
+                .querySelector(".fechar_modal")
+                .addEventListener("click", function () {
+                  modal_checkout.style.display = "none";
+                });
+            });
+          }
+        </script>
+        <!--<div class="aviso">
+                <img src="../libs/img/app/maozinha.svg" alt=""> Deslize o dedo <br> para a <strong>esquerda</strong>
+            </div>-->
+        <div class="modal_aviso" style="display: none"></div>
+
+        <div class="moldura-cadastro">
+          <div class="usuario-free carrega_iframe_cad">
+            <div>
+              <!--<p>DEPÓSITO RÁPIDO</p>-->
+              <h3>FAÇA SEU CADASTRO</h3>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <script>
+          // Adicionar um listener para eventos de clique no documento
+          document.addEventListener("click", function (event) {
+            // Verificar se o clique foi no elemento desejado
+            if (event.target.classList.contains("carrega_iframe_cad")) {
+              // Criar o iframe
+              var iframe = document.createElement("iframe");
+              iframe.className = "iframe_casa linkcasa";
+              iframe.setAttribute("src", ""); // Defina o src como vazio inicialmente
+              iframe.setAttribute("height", "700");
+              iframe.setAttribute("frameborder", "0");
+              document.querySelector(".modal_aviso").innerHTML =
+                '<button class="fechar_modal" style="display:block">X</button>';
+              document.querySelector(".modal_aviso").appendChild(iframe);
+
+              // Definir o src desejado para o iframe
+              var refAfiliado = "?ref=HJS6QVIAWT";
+              iframe.src = "https://zinbets.com/" + refAfiliado;
+
+              // Abra o modal
+              var modal_aviso = document.querySelector(".modal_aviso");
+              modal_aviso.style.display = "block";
+
+              // Adicione o evento de click ao botão de fechar modal
+              document
+                .querySelector(".fechar_modal")
+                .addEventListener("click", function () {
+                  modal_aviso.style.display = "none";
+                });
+            }
+          });
+        </script>
+
+        <script>
+          function carregaIframe() {
+            const myIframe = document.getElementById("my-iframe");
+
+            const iframewindow = myIframe.contentWindow;
+            console.log(iframewindow.document);
+          }
+          document.addEventListener("DOMContentLoaded", function () {
+            document
+              .querySelector(".criar_conta")
+              .addEventListener("click", function () {
+                document.querySelectorAll(".modal_aviso")[0].innerHTML =
+                  '<iframe id="my-iframe" style="padding:0px;width:100% !important;" class="iframe_casa linkcasa" src="" height="700" frameborder="0" onload="carregaIframe(this);"></iframe>';
+
+                /*setTimeout(function() {
+                          
+                          $.ajax({
+                              url: "../libs/includes/atualiza_status.php",
+                              type: "POST",
+                              data: {
+                                  hash: "5cd12029f7688e9bf40e01715b699059",
+                                  status: "1"
+                              },
+                              success: function(response) {
+                                  window.location.href = "./";
+                              },
+                              error: function(jqXHR, textStatus, errorThrown) {
+                              }
+                          });
+  
+                      }, 180000);*/
+              });
+          });
+        </script>
+      </div>
+    </div>
+    <style>
+      .modal_aviso,
+      .modal_checkout {
+        padding: 23px;
+        box-shadow: 0px 4px 60px rgb(136 69 250 / 55%);
+        border-radius: 22px;
+        margin: 0 auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        transition: opacity 0.2s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.96);
+        color: #fff;
+        width: 85%;
+        max-width: 448px;
+        text-align: left;
+      }
+
+      .modal_aviso.block,
+      .modal_checkout.block {
+        display: none;
+        opacity: 0;
+      }
+
+      .fechar_modal {
+        padding: 0;
+        background: #;
+        color: white;
+        padding: 8px 12px;
+        display: none;
+      }
+
+      .criar_conta,
+      .confirma_conta {
+        padding: 10px 28px;
+        border-radius: 24px;
+        border: 1px solid whitesmoke;
+        background: #0085ff;
+        color: whitesmoke;
+        font-size: 18px;
+        width: 100%;
+        margin: 8px 0;
+      }
+
+      .tenho_conta {
+        padding: 10px 28px 10px 28px;
+        border-radius: 24px;
+        border: 1px solid #0085ff;
+        background: transparent;
+        color: white;
+        font-size: 18px;
+        width: 100%;
+      }
+
+      .tenho_conta img {
+        width: 24px;
+        vertical-align: middle;
+      }
+    </style>
+
+    <div class="menu">
+      <ul class="bottom-nav">
+        <div class="slider"></div>
+        <li>
+          <a
+            href="app.html"
+            class="clique_home active-icon"
+            style="
+              width: 45px;
+              height: 45px;
+
+              top: 10px;
+              background-color: #8845fa;
+              border: 2px solid #8845fa;
+              box-shadow: 0px 0px 0px 5px rgb(136 69 250 / 35%);
+              transition: 1s;
+            "
+          >
+            <img src="../libs/img/app/home.png" width="45px" />
+          </a>
+        </li>
+        <!--<li>
+                <a href="#" class="carrega-conteudo" data-url="paginas/academy.php">
+                    <img src="../libs/img/app/academy.png" width="45px">
+                </a>
+            </li>-->
+        <!--<li>
+          <a href="#" class="carrega-conteudo" data-url="/jogos/jogos.html">
+            <img src="../libs/img/app/jogos.png" width="45px" />
+          </a>
+        </li>-->
+        <!--<li>
+                <a href="#" class="acessar_planilha">
+                    <img src="../libs/img/app/gestao.png" width="45px">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="carrega-conteudo" data-url="paginas/live.php">
+                    <img src="../libs/img/app/live.png" width="45px">
+                </a>
+            </li>-->
+      </ul>
+    </div>
+    <!--<div class="gerenciamento escondido">
+    <button class="fechar_gerenciamento">X</button>
+    <h3 style="margin-top: -10px;
+    margin-bottom: 34px;">Escolha seu perfil e <br> digite o valor da sua banca.</h3>
+    <select class="input" name="perfil" id="perfil">
+        <option disabled selected>Clique aqui e selecione um perfil</option>
+        <option value="0">Conservador</option>
+        <option value="1">Moderado</option>
+        <option value="2">Agressivo</option>
+    </select>
+    <label>Saldo da banca</label>
+    <input class="input" type="number" id="saldo" placeholder="Saldo da banca">
+    <label>Entrada recomendada</label>
+    <input class="input" type="text" id="entrada" placeholder="0,00" readonly>
+    <label>Stopwin recomendado</label>
+    <input class="input" type="text" id="stopwin" placeholder="0,00" readonly>
+    <label>Stoploss recomendado</label>
+    <input class="input" type="text" id="stoploss" placeholder="0,00" readonly>
+</div>
+<script>
+
+    // Obter os elementos do DOM
+    perfilSelect = document.getElementById('perfil');
+    saldoInput = document.getElementById('saldo');
+    entradaInput = document.getElementById('entrada');
+    stopwinInput = document.getElementById('stopwin');
+    stoplossInput = document.getElementById('stoploss');
+
+    // Definir os valores das porcentagens para cada perfil
+    perfilPorcentagens = {
+        0: { entrada: 0.03, stopwin: 0.05, stoploss: 0.15 },
+        1: { entrada: 0.07, stopwin: 0.15, stoploss: 0.25 },
+        2: { entrada: 0.12, stopwin: 0.2, stoploss: 0.4 }
+    };
+
+    // Função para atualizar os valores dos campos
+    function atualizarCampos() {
+        // Obter os valores do perfil e do saldo
+        perfil = perfilSelect.value;
+        saldo = saldoInput.value;
+
+        // Calcular os valores de entrada, stopwin e stoploss com base no perfil e no saldo
+        entrada = perfilPorcentagens[perfil].entrada * saldo;
+        stopwin = perfilPorcentagens[perfil].stopwin * saldo;
+        stoploss = perfilPorcentagens[perfil].stoploss * saldo;
+
+        // Atualizar os valores dos campos de entrada, stopwin e stoploss
+        entradaInput.value = entrada.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+        stopwinInput.value = stopwin.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+        stoplossInput.value = stoploss.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+    }
+
+    // Adicionar os eventos para atualização dos campos
+    perfilSelect.addEventListener('change', atualizarCampos);
+    saldoInput.addEventListener('input', atualizarCampos);
+
+    botaoAbrir = document.querySelectorAll('.acessar_planilha');
+    botaoFechar = document.querySelector('.fechar_gerenciamento');
+    gerenciamento = document.querySelector('.gerenciamento');
+
+    for(let i = 0; i < botaoAbrir.length; i++){
+
+        // Adiciona o evento de clique no botão de abrir
+        botaoAbrir[i].addEventListener('click', function() {
+            gerenciamento.classList.add('mostrar');
+        });
+    
+        // Adiciona o evento de clique no botão de fechar
+        botaoFechar.addEventListener('click', function() {
+            gerenciamento.classList.remove('mostrar');
+        });
+
+    }
+
+</script>
+<style>
+    .gerenciamento {
+        padding: 25px 20px;
+        box-shadow: 0px 4px 60px rgba(107, 19, 202, 0.5);
+        border-radius: 20px;
+        max-width: 330px;
+        display: flex;
+        flex-direction: column;
+        margin: 18px auto;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        position: fixed;
+        top: 100px;
+        z-index: 999898989898;
+        background: #000;
+        left: 0;
+        right: 0;
+    }
+    .fechar_gerenciamento {
+        width: 30px;
+        font-weight: bold;
+        border-radius: 28px;
+        padding: 6px 7px;
+        border: none;
+        background: #0085FF;
+        color: black;
+    }
+    .escondido {
+        display: none;
+    }
+
+    .gerenciamento.mostrar {
+        opacity: 1;
+        display: flex;
+    }
+    .gerenciamento label {
+        text-align: left;
+    }
+    .input {
+        color: white;
+        border: none;
+        padding: 0 12px;
+        border-radius: 25px;
+        margin: 6px 0px;
+        background: #ffffff2e;
+        outline: none;
+        height: 42px;
+    }
+    .input::placeholder {
+        color: white;
+    }
+</style>-->
+
+    <style>
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+      }
+
+      .scrollhidden::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background: transparent;
+      }
+
+      ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+
+      ::-webkit-scrollbar,
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .main_placar,
+      .aviso_placar {
+        padding: 5px 0 0 0;
+      }
+
+      .main_placar {
+        width: 100%;
+        background: #0c0d0d;
+        border-radius: 20px;
+
+        margin-top: 10px;
+      }
+
+      .placar {
+        background: #08140a;
+        border: 0.5px solid #0085ff;
+        border-radius: 20px;
+        margin: 10px auto;
+        width: 83%;
+      }
+
+      .flex,
+      .placar p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .placar p {
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+        font-weight: bold;
+        font-size: 10px;
+      }
+
+      .placar-big-win {
+        box-shadow: 0px 0px 10px rgba(0, 253, 216, 0.5);
+        background: #011f05;
+
+        border-radius: 20px;
+        margin: 10px auto;
+        width: 83%;
+      }
+
+      .placar-big-win p {
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+        font-weight: bold;
+        font-size: 10px;
+        color: #1bffc8;
+      }
+
+      .placar-mega-win {
+        box-shadow: 0px 0px 10px rgba(144, 104, 0, 0.9);
+        background: #201702;
+        border-radius: 20px;
+        margin: 10px auto;
+        width: 83%;
+      }
+
+      .placar-mega-win p {
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+        font-weight: bold;
+        font-size: 10px;
+        color: #ffd569;
+      }
+
+      .placar-super-mega-win {
+        box-shadow: 0px 0px 10px rgba(255, 104, 255, 0.9);
+        background: #201702;
+        border-radius: 20px;
+        margin: 10px auto;
+        width: 83%;
+      }
+
+      .placar-super-mega-win p {
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+        font-weight: bold;
+        font-size: 10px;
+        color: #ff68ff;
+      }
+
+      .placar-green {
+        box-shadow: 0px 0px 10px rgba(0, 253, 216, 0.5);
+        background: #011f05;
+
+        border-radius: 20px;
+        margin: 10px auto;
+        width: 83%;
+      }
+
+      .placar-green p {
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+        font-weight: bold;
+        font-size: 10px;
+        color: #1bffc8;
+      }
+
+      .placar-red {
+        box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+        background: #16060d;
+
+        border-radius: 20px;
+        margin: 10px auto;
+        width: 83%;
+      }
+
+      .placar-red p {
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+        font-weight: bold;
+        font-size: 10px;
+        color: #ff0000;
+      }
+
+      .placar-percent {
+        box-shadow: 0px 0px 10px rgba(144, 104, 0, 0.9);
+        background: #201702;
+
+        border-radius: 20px;
+        margin: 10px auto;
+        width: 83%;
+      }
+
+      .placar-percent p {
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+        font-weight: bold;
+        font-size: 10px;
+        color: #ffd569;
+      }
+
+      .placar img {
+        width: 16px;
+        margin-right: 8px;
+        margin-left: 5px;
+      }
+
+      .aviso_placar p {
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      .box-jogo img {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    </style>
+  </body>
+</html>
+<div class="gerenciamento escondido">
+  <button class="fechar_gerenciamento">X</button>
+  <h3 style="margin-top: -10px; margin-bottom: 34px">
+    Escolha seu perfil e <br />
+    digite o valor da sua banca.
+  </h3>
+  <select class="input" name="perfil" id="perfil">
+    <option disabled selected>Clique aqui e selecione um perfil</option>
+    <option value="0">Conservador</option>
+    <option value="1">Moderado</option>
+    <option value="2">Agressivo</option>
+  </select>
+  <label>Saldo da banca</label>
+  <input class="input" type="number" id="saldo" placeholder="Saldo da banca" />
+  <label>Entrada recomendada</label>
+  <input class="input" type="text" id="entrada" placeholder="0,00" readonly />
+  <label>Stopwin recomendado</label>
+  <input class="input" type="text" id="stopwin" placeholder="0,00" readonly />
+  <label>Stoploss recomendado</label>
+  <input class="input" type="text" id="stoploss" placeholder="0,00" readonly />
+</div>
+<script>
+  // Obter os elementos do DOM
+  perfilSelect = document.getElementById("perfil");
+  saldoInput = document.getElementById("saldo");
+  entradaInput = document.getElementById("entrada");
+  stopwinInput = document.getElementById("stopwin");
+  stoplossInput = document.getElementById("stoploss");
+
+  // Definir os valores das porcentagens para cada perfil
+  perfilPorcentagens = {
+    0: { entrada: 0.03, stopwin: 0.05, stoploss: 0.15 },
+    1: { entrada: 0.07, stopwin: 0.15, stoploss: 0.25 },
+    2: { entrada: 0.12, stopwin: 0.2, stoploss: 0.4 },
+  };
+
+  // Função para atualizar os valores dos campos
+  function atualizarCampos() {
+    // Obter os valores do perfil e do saldo
+    perfil = perfilSelect.value;
+    saldo = saldoInput.value;
+
+    // Calcular os valores de entrada, stopwin e stoploss com base no perfil e no saldo
+    entrada = perfilPorcentagens[perfil].entrada * saldo;
+    stopwin = perfilPorcentagens[perfil].stopwin * saldo;
+    stoploss = perfilPorcentagens[perfil].stoploss * saldo;
+
+    // Atualizar os valores dos campos de entrada, stopwin e stoploss
+    entradaInput.value = entrada.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+    stopwinInput.value = stopwin.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+    stoplossInput.value = stoploss.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+  }
+
+  // Adicionar os eventos para atualização dos campos
+  perfilSelect.addEventListener("change", atualizarCampos);
+  saldoInput.addEventListener("input", atualizarCampos);
+
+  botaoAbrir = document.querySelectorAll(".acessar_planilha");
+  botaoFechar = document.querySelector(".fechar_gerenciamento");
+  gerenciamento = document.querySelector(".gerenciamento");
+
+  for (let i = 0; i < botaoAbrir.length; i++) {
+    // Adiciona o evento de clique no botão de abrir
+    botaoAbrir[i].addEventListener("click", function () {
+      gerenciamento.classList.add("mostrar");
+    });
+
+    // Adiciona o evento de clique no botão de fechar
+    botaoFechar.addEventListener("click", function () {
+      gerenciamento.classList.remove("mostrar");
+    });
+  }
+</script>
+<style>
+  .gerenciamento {
+    padding: 25px 20px;
+    box-shadow: 0px 4px 60px rgba(107, 19, 202, 0.5);
+    border-radius: 20px;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    margin: 18px auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: fixed;
+    top: 100px;
+    z-index: 999898989898;
+    background: #000;
+    left: 0;
+    right: 0;
+  }
+
+  .fechar_gerenciamento {
+    width: 30px;
+    font-weight: bold;
+    border-radius: 28px;
+    padding: 6px 7px;
+    border: none;
+    background: #0085ff;
+    color: black;
+  }
+
+  .escondido {
+    display: none;
+  }
+
+  .gerenciamento.mostrar {
+    opacity: 1;
+    display: flex;
+  }
+
+  .gerenciamento label {
+    text-align: left;
+  }
+
+  .input {
+    color: white;
+    border: none;
+    padding: 0 12px;
+    border-radius: 25px;
+    margin: 6px 0px;
+    background: #ffffff2e;
+    outline: none;
+    height: 42px;
+  }
+
+  .input::placeholder {
+    color: white;
+  }
+</style>
+
+<script src="/libs/js/script.js"></script>
+
+<script src="/libs/js/link.js"></script>
