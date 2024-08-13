@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesDragon.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://owenbet.io/games/play/639/1695365" + refAfiliado;
+    iframe.src = "https://opiniaododia.online/login" + refAfiliado;
   });
 
   // <------ FIM FORTUNE DRAGON ------>
