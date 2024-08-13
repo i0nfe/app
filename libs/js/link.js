@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Defina o valor do parâmetro refAfiliado
-  var refAfiliado = "?ref=HJS6QVIAWT";
+  var refAfiliado = "";
 
   // <------ FORTUNE DRAGON ------>
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesDragon.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://zinbets.com/game/fortune-dragon" + refAfiliado;
+    iframe.src = "https://owenbet.io/games/play/639/1695365" + refAfiliado;
   });
 
   // <------ FIM FORTUNE DRAGON ------>
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesTiger.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://zinbets.com/game/fortune-tiger" + refAfiliado;
+    iframe.src = "https://owenbet.io/games/play/1375/126" + refAfiliado;
   });
 
   // <------ FIM FORTUNE TIGER ------>
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesOx.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://zinbets.com/game/fortune-ox" + refAfiliado;
+    iframe.src = "https://owenbet.io/games/play/1366/98" + refAfiliado;
   });
 
   // <------ FIM FORTUNE OX ------>
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesMouse.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://zinbets.com/game/fortune-mouse" + refAfiliado;
+    iframe.src = "https://owenbet.io/games/play/1353/68" + refAfiliado;
   });
 
   // <------ FIM FORTUNE MOUSE ------>
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesRabbit.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://zinbets.com/game/fortune-rabbit" + refAfiliado;
+    iframe.src = "https://owenbet.io/games/play/1382/1543462" + refAfiliado;
   });
 
   // <------ FIM FORTUNE RABBIT ------>
