@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Defina o valor do parâmetro refAfiliado
-  var refAfiliado = "";
+  var refAfiliado = "?code=YMU83328UD";
 
   // <------ FORTUNE DRAGON ------>
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesDragon.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://opiniaododia.online/login" + refAfiliado;
+    iframe.src = "https://owenbet.io/register" + refAfiliado;
   });
 
   // <------ FIM FORTUNE DRAGON ------>
