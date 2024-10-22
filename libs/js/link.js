@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Defina o valor do parâmetro refAfiliado
-  var refAfiliado = "?code=YMU83328UD";
+  var refAfiliado = "";
 
   // <------ FORTUNE DRAGON ------>
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesDragon.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://owenbet.io/register" + refAfiliado;
+    iframe.src = "https://cassinopx.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE DRAGON ------>
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesTiger.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://owenbet.io/games/play/1375/126" + refAfiliado;
+    iframe.src = "https://cassinopx.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE TIGER ------>
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesOx.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://owenbet.io/games/play/1366/98" + refAfiliado;
+    iframe.src = "https://cassinopx.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE OX ------>
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesMouse.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://owenbet.io/games/play/1353/68" + refAfiliado;
+    iframe.src = "https://cassinopx.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE MOUSE ------>
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesRabbit.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://owenbet.io/games/play/1382/1543462" + refAfiliado;
+    iframe.src = "https://cassinopx.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE RABBIT ------>
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesMines.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://zinbets.com/mines" + refAfiliado;
+    iframe.src = "https://cassinopx.com/" + refAfiliado;
   });
 
   // <------ FIM MINES ------>
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesCrash.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://zinbets.com/crash" + refAfiliado;
+    iframe.src = "https://cassinopx.com/" + refAfiliado;
   });
 
   // <------ FIM CRASH ------>
