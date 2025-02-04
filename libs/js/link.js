@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesTiger.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://cassinopx.com/" + refAfiliado;
+    iframe.src = "https://acertanabet.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE TIGER ------>
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesOx.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://cassinopx.com/" + refAfiliado;
+    iframe.src = "https://acertanabet.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE OX ------>
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesMouse.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://cassinopx.com/" + refAfiliado;
+    iframe.src = "https://acertanabet.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE MOUSE ------>
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesRabbit.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://cassinopx.com/" + refAfiliado;
+    iframe.src = "https://acertanabet.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE RABBIT ------>
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesMines.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://cassinopx.com/" + refAfiliado;
+    iframe.src = "https://acertanabet.com/" + refAfiliado;
   });
 
   // <------ FIM MINES ------>
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesCrash.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://cassinopx.com/" + refAfiliado;
+    iframe.src = "https://acertanabet.com/" + refAfiliado;
   });
 
   // <------ FIM CRASH ------>
