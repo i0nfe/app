@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Defina o valor do parâmetro refAfiliado
-  var refAfiliado = "register?code=JXP90D11JO";
+  var refAfiliado = "register?code=YECCLHJW8R";
 
   // <------ FORTUNE DRAGON ------>
 
