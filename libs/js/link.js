@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Defina o valor do parâmetro refAfiliado
-  var refAfiliado = "";
+  var refAfiliado = "register?code=JXP90D11JO";
 
   // <------ FORTUNE DRAGON ------>
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iterar sobre cada iframe e atribuir o src desejado
   iframesDragon.forEach((iframe) => {
     // Atribua o src desejado aqui
-    iframe.src = "https://cassinopx.com/" + refAfiliado;
+    iframe.src = "https://acertanabet.com/" + refAfiliado;
   });
 
   // <------ FIM FORTUNE DRAGON ------>
